@@ -15,7 +15,7 @@ st.set_page_config(
 
 # Use Streamlit secrets for the API key (set in Streamlit Cloud UI)
 try:
-    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+    client = OpenAI(api_key=st.secrets["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"])
 except Exception:
     st.error(
         "OPENAI_API_KEY is not set.\n\n"
